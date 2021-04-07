@@ -28,7 +28,7 @@ const Layout = ({children}) => {
             <p>Writer</p>
           </div>
         </div>
-        <div className="h-screen w-5/6 flex justify-center items-center text-xl">
+        <div className="h-screen w-5/6 flex flex-col justify-center items-center text-xl leading-8">
           {children}
         </div>
       </main>
