@@ -17,7 +17,6 @@
   "dependencies": {
     "@fontsource/audiowide": "^4.2.2",
     "@fontsource/montserrat": "^4.2.2",
-    "framer-motion": "^4.1.2",
     "gatsby": "^3.2.1",
     "gatsby-plugin-image": "^1.2.0",
     "gatsby-plugin-layout": "^2.2.0",
