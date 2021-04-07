@@ -10,26 +10,34 @@ const Layout = ({children}) => {
 
   return (
     <>
-      <main className="flex">
-        <div className="h-screen flex flex-col justify-between p-4 w-1/6 bg-gray-600">
+      <main className="flex flex-col lg:flex-row">
+        <div className="h-1/5 lg:h-screen flex lg:flex-col justify-between p-4 lg:w-1/6 bg-gray-600">
             <StaticImage
               src="../images/chibi_no_bg.png"
               alt="A cute chibi-style image of Lily"
               placeholder="blurred"
               layout="constrained"
+              className="hidden lg:block"
             />
-            <div class="flex flex-col text-2xl">
+            <div className="flex flex-col lg:text-2xl">
               <Link to="/">Home</Link>
               <Link to="/bleep">Bleep</Link>
             </div>
-          <div className="text-2xl">
-            <p className="font-display text-4xl">Lily Eisner</p>
+          <div className="lg:text-2xl">
+            <p className="font-display lg:text-4xl">Lily Eisner</p>
             <p>Developer</p>
             <p>Writer</p>
           </div>
         </div>
-        <div className="h-screen w-5/6 flex flex-col justify-center items-center text-xl leading-8">
+        <div className="h-4/5 lg:h-screen lg:w-5/6 flex flex-col justify-center items-center text-center text-xl lg:text-4xl leading-loose p-6 lg:p-0">
           {children}
+        <StaticImage
+          src="../images/chibi_no_bg.png"
+          alt="A cute chibi-style image of Lily"
+          placeholder="blurred"
+          layout="constrained"
+          className="lg:hidden"
+        />
         </div>
       </main>
     </>
