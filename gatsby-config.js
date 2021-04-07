@@ -11,6 +11,7 @@ module.exports = {
     title: "Lily Eisner",
   },
   plugins: [
+    "gatsby-plugin-layout",
     {
       resolve: "gatsby-source-contentful",
       options: {
